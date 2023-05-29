@@ -1,0 +1,12 @@
+2023-05-29 16:48:31 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Синтаксическая ошибка в выражении SQL "select * from messages where id = [*]5eaf9840-57fd-4413-bb19-16ad4e013581"
+Syntax error in SQL statement "select * from messages where id = [*]5eaf9840-57fd-4413-bb19-16ad4e013581"; SQL statement:
+select * from messages where id = 5eaf9840-57fd-4413-bb19-16ad4e013581 [42000-214]
+2023-05-29 17:28:27 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Таблица "MESSAGES" уже существует
+Table "MESSAGES" already exists; SQL statement:
+CREATE TABLE messages ( id VARCHAR(60) DEFAULT RANDOM_UUID() PRIMARY KEY, text VARCHAR NOT NULL ) [42101-214]
+2023-05-29 17:29:33 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Таблица "MESSAGES" уже существует
+Table "MESSAGES" already exists; SQL statement:
+CREATE TABLE messages ( id VARCHAR(60) DEFAULT RANDOM_UUID() PRIMARY KEY, text VARCHAR NOT NULL ) [42101-214]
